@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 공통 스타일 */
 *{
     margin: 0;
@@ -14,7 +15,7 @@
       color: inherit;
   }
   /* 헤더 스타일 */
- .header {
+ .adminheader {
       background-color: #D96073;
       padding: 10px 20px;
       color: white;

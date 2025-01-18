@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>질문게시판 자격증목록</title>
-    <link rel="stylesheet" href="./../../assets/css/admin/tipSec.css">
-    <script defer src="./../../assets/js/admin/tipSec.js"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/basic/header.css">
+ <script defer src="${pageContext.request.contextPath}/assets/js/admin/basic/header.js"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/tipSec.css">
+<script defer src="${pageContext.request.contextPath}/assets/js/admin/tipSec.js"></script>
 </head>
-
 <body>
-    <header>
-        <iframe src="./basic/header.html" width="100%" height="300px" frameborder="0"
-            style="display: block; margin-bottom: 20px;"></iframe>
-    </header>
-    <main>
+<jsp:include page="./basic/header.jsp" />
+	 <main>
     <nav class="mtable">
         <div class="head">
             <div class="title">꿀팁게시판-보안</div>
@@ -71,5 +70,4 @@
     </nav>
     </main>
 </body>
-
 </html>

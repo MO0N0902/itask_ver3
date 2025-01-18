@@ -1,39 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지게시판 게시글 수정</title>
-    <link rel="stylesheet" href="./../../assets/css/admin/edit.css">
-    <script defer src="./../../assets/js/admin/edit.js"></script>
-
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/basic/header.css">
+ <script defer src="${pageContext.request.contextPath}/assets/js/admin/basic/header.js"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/write.css">
+<script defer src="${pageContext.request.contextPath}/assets/js/admin/write.js"></script>
 </head>
-
 <body>
-    <header>
-        <iframe src="./../admin/basic/header.html" width="100%" height="300px" frameborder="0"
-            style="display: block"></iframe>
-    </header>
-    <main class="itAskBox">
-        <div class="notice">공지게시판 게시글 수정</div>
+<jsp:include page="./basic/header.jsp" />
+	<main class="itAskBox">
+        
         <!-- 메인 -->
         <!-- 카테고리 선택 -->
         <div class="write-click">
+            <p class="noticeWrite">공지게시판 글쓰기</p>
+            <hr>
             <p class="write-title">카테고리 선택</p>
             <div class="write-clickbox1">
-                <div class="write-button"  id="all"> 전체</div>
-                <div class="write-button"  id="dev"> 개발</div>
+                <div class="write-button" id="all"> 전체</div>
+                <div class="write-button" id="dev"> 개발</div>
                 <div class="write-button" id="sec">보안</div>
                 <div class="write-button" id="qual">자격증</div>
             </div>
             <!-- 제목 -->
             <div class="write-title-section">
-                <input type="text" id="title" value="<공지>블랙리스트 회원안내" minlength="8" required />
+                <input type="text" id="title" placeholder="제목을 입력하세요(최소 8자)" minlength="8" required />
             </div>
             <!-- 글상자 -->
             <div class="write-content-section">
-                <textarea rows="30" id="content" minlength="20" required>지수지듀</textarea>
+                <textarea rows="30" id="content" minlength="20" placeholder="내용을 입력하세요(최소 20자)" required></textarea>
             </div>
             <!-- 첨부파일 입력 -->
             <div class="write-file">
@@ -48,12 +47,11 @@
                     </div>
                 </div>
                 <!-- 첨부파일 안내 -->
-                <br><br><br><br>
                 <!-- 글 작성하기 버튼 -->
+                <br><br><br><br>
                 <div class="submit-button">글 작성하기</div>
             </div>
         </div>
     </main>
 </body>
-
 </html>
