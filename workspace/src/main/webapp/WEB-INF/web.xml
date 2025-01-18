@@ -41,15 +41,6 @@
      <url-pattern>*.qu</url-pattern>
   </servlet-mapping>
   
-  <!-- 소개 -->
-  <servlet>
-     <servlet-name>Intro</servlet-name>
-     <servlet-class>com.itask.app.intro.IntroFrontController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-     <servlet-name>Intro</servlet-name>
-     <url-pattern>*.in</url-pattern>
-  </servlet-mapping>
   
     <!-- 소개 -->
   <servlet>

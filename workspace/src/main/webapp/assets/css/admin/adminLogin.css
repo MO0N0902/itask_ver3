@@ -1,10 +1,17 @@
-
+@charset "UTF-8";
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    
+}
 .adminlogin-container{
     text-align: center;
     padding: 30px;
-    width: 500px;
-    border: 1px solid #DFDFDF;
-    margin: 23vh auto;
+    width: 300px;
+    border: 1px solid black;
 }
 .logo {
     margin-bottom: 20px;
@@ -15,52 +22,23 @@
 .admin {
     margin-bottom: 20px;
     font-size: 20px;
-    color: #606060;
 }
-.id{
-    width: 300px;
-    height: 70px;
-    padding: 0px 30px;
-    border: 1px solid #DFDFDF;
-    border-radius: 50px;
-    margin-bottom: 20px;
+.id, .pw {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #606060;
+    border-radius: 20px;
+    font-size: 14px;
 }
-.adminlogin-container>form>div{
-    position: relative;
-    width: 360px;
-    margin: 0px auto 70px;
-}
-.pw{
-    position: absolute;
-    left: 0px;
-    width: 300px;
-    height: 70px;
-    padding: 0px 30px;
-    border: 1px solid #DFDFDF;
-    border-radius: 50px;
-    margin-bottom: 20px;
-}
-.adminlogin-container>form>div>img{
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    
+.login-button {
+    width: 100%;
+    padding: 10px;
     cursor: pointer;
-}
-.adminlogin-container>form>button{
-    width: 360px;
-    height: 70px;
-    border: 1px solid #DFDFDF;
-    border-radius: 50px;
+    border-radius: 20px;
+    border: none;
     background-color: #D96073;
-    color:white;
-    cursor: pointer;
-    margin-bottom: 30px;
-   
-}
-.adminlogin-container>form>button:hover{
-    border: 1px solid #D96073;
-    background-color: white;
-    color: #D96073;
-    font-weight: bold;
+    color: #DFDFDF;
+    margin-left: 10px;
+    
 }
